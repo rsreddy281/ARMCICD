@@ -4,19 +4,21 @@
      "parameters": {
         "adminUsername": {
             "type": "string",
+            "defaultValue": "",
             "metadata": {
                 "description": "Username for the Virtual Machine."
             }
         },
         "adminPassword": {
             "type": "securestring",
+            "defaultValue": "",
             "metadata": {
                 "description": "Password for the Virtual Machine."
             }
         },
         "windowsOSVersion": {
             "type": "string",
-            "defaultValue": "2016-Datacenter",
+            "defaultValue": "",
             "allowedValues": [
                 "2008-R2-SP1",
                 "2012-Datacenter",
