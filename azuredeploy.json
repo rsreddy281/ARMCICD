@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "firstName": {
+      "type": "string",
+      "metadata": {
+        "description": "The first name of user"
+      }
+    },
+      "lastName": {
+        "type": "string",
+        "metadata": {
+          "description": "The last name of user"
+        }
+      }
+    },
+  "variables": {},
+  "resources": [],
+  "outputs": {
+    "firstNameOutput": {
+      "value": "[parameters('firstName')]",
+      "type": "string"
+    },
+    "lastNameOutput": {
+      "value": "[parameters('lastName')]",
+      "type": "string"
+    }
+  }
+}
