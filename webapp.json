@@ -23,17 +23,17 @@
         {
             "type": "Microsoft.Web/sites",
             "apiVersion": "2015-08-01",
-            "name": "rsrdemo4243",
+            "name": "rsrdemopower",
             "location": "[resourceGroup().location]",
             "tags": {
                 "[concat('hidden-related:', resourceGroup().id, '/providers/Microsoft.Web/serverfarms/rsrdemoplan')]": "Resource",
-                "displayName": "rsrdemo4243"
+                "displayName": "rsrdemopower"
             },
             "dependsOn": [
                 "Microsoft.Web/serverfarms/rsrdemoplan"
             ],
             "properties": {
-                "name": "rsrdemo4243",
+                "name": "rsrdemopower",
                 "serverFarmId": "[resourceId('Microsoft.Web/serverfarms/', 'rsrdemoplan')]"
             }
         }
